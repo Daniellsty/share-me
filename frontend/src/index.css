@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  font-weight: 'Lato',sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+  display: none;
+}
