@@ -15,7 +15,6 @@ const PinDetail = ({user}) => {
   const [comment, setComment] = useState('');
   const [addingComment, setAddingComment] = useState(false);
 
-  console.log(pins);
 
 
   const {pinId} = useParams();
