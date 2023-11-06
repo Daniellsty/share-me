@@ -13,7 +13,7 @@ const Pin = ({pin:{postedBy,_id,image,save,destination}}) => {
   const [postHover, setPostHover] = useState(true);
   const [savingPost, setSavingPost] = useState(false);
   const userInfo = fetchUser();
-  const savePosts = !!(save?.filter((item)=> item.postedBy._id === userInfo?.aud ))?.length
+  const savePosts = !!(save?.filter((item)=> item?.postedBy?._id === userInfo?.aud ))?.length
   
 
   const savePin=(id)=>{
